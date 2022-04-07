@@ -2,7 +2,7 @@ console.log("javascript loaded");
 
 const num = Math.floor(Math.random() * 166)
 
-fetch("http://www.nokeynoshade.party/api/queens/" + num)
+fetch("https://www.nokeynoshade.party/api/queens/" + num)
   .then(response => response.json())
   .then(data => {
      console.log(data)
