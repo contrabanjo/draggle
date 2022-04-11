@@ -5,7 +5,7 @@ let answer = {};
 
 const num = Math.floor(Math.random() * 166)
 
-fetch("http://www.nokeynoshade.party/api/queens/" + num)
+fetch("https://www.nokeynoshade.party/api/queens/" + num)
   .then(response => response.json())
   .then(data => {
      console.log(data)
@@ -14,7 +14,7 @@ fetch("http://www.nokeynoshade.party/api/queens/" + num)
      answer = data
 });
 
-fetch("http://www.nokeynoshade.party/api/queens/all")
+fetch("https://www.nokeynoshade.party/api/queens/all")
   .then(response => response.json())
   .then(data => {
      console.log(data);
@@ -34,6 +34,7 @@ function updatePicture(){
   }
 }
 
+<<<<<<< HEAD
 function displayGuess(g, isCorrect){
    const container = document.getElementById("guessContainer");
    const newGuess = document.createElement("div");
@@ -61,3 +62,6 @@ document.getElementById("guess").addEventListener("keyup", (e)=>{
     updatePicture();
   }
 })
+=======
+document.getElementById("button").addEventListener("click", updatePicture);
+>>>>>>> 130d5b47775459638739a3d260a325a84d50cab5
