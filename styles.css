@@ -16,10 +16,15 @@ html, body {
 #pic {
   height: 50%;
   width: 100%;
+  object-fit: contain;
 }
 
 #button {
-  font-size: 10em;
+  font-size: 5em;
+}
+
+#guess {
+   font-size: 5em;
 }
 
 .pic1 {
